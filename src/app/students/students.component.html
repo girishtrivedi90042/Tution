@@ -1,0 +1,16 @@
+<div class="row row-cols-md-4">
+<div *ngFor = "let student of students; let i=index">
+  <br>
+  <div class="card border-dark" (click)="navigate()" style="width: 18rem;">
+    <div class="card-body">
+      <h5 class="card-title">{{student.first_name}} {{student.last_name}}</h5>
+      <p class="card-text">Roll No - {{student.Roll_Number}}</p>
+      <p class="card-text">Date of Birth - {{student.Date_Of_Birth}}</p>
+      <p class="card-text">Class - {{student.Class}}</p>
+
+        <!-- <a href="#" class="stretched-link"></a> -->
+ 
+    </div>
+  </div>
+  </div>
+</div>

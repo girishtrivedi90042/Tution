@@ -1,0 +1,42 @@
+<div class="container">
+
+    <div class="row">
+        <div class="panel panel-primary filterable">
+            <div class="panel-heading">
+                <h3 class="panel-title">Users</h3>
+                <div class="pull-right">
+                    <button class="btn btn-default btn-xs btn-filter"><span class="glyphicon glyphicon-filter"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="filters">
+                <th><input type="text" class="form-control" placeholder="Name"></th>
+                <th><input type="date" class="form-control" placeholder="From Date"></th>
+                <th><input type="date" class="form-control" placeholder="To Date"></th>
+            </div>
+            <br>
+            <tbody>
+                <table class="table table-bordered ">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Qualification</th>
+                        <th>Date of Joining</th>
+                        <th>Subject</th>
+                    </tr>
+                    <!-- <div *ngFor="let teacher of teachers; let i=index"> -->
+
+                    <tr *ngFor="let teacher of teachers">
+                        <td>{{teacher.ID}}</td>
+                        <td>{{teacher.Name}}</td>
+                        <td>{{teacher.Qualification}}</td>
+                        <td>{{teacher.DOJ}}</td>
+                        <td>{{teacher.Subject}}</td>
+                    </tr>
+                    <!-- </div> -->
+                </table>
+            </tbody>
+        </div>
+    </div>
+</div>
